@@ -1,0 +1,29 @@
+
+#wrap {
+  position: relative;
+  overflow: hidden; /* はみ出たところは隠す */
+  width: 800px;
+  margin: 0 auto;
+}
+.slideConts {
+  width: 500px;
+  height: 400px;
+  margin: 40px auto;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+.slideContsL {
+  background-color: lightpink;
+  transform: translate(-800px, 0);
+}
+.slideContsR {
+  background-color: lightblue;
+  transform: translate(800px, 0);
+}
+.slideContsL.show {
+  transform: translate(-50px, 0) !important;
+}
+.slideContsR.show {
+  transform: translate(50px, 0) !important;
+}
